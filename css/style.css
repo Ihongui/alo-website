@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f4f4;
+    color: #333;
+  }
+  
+  .hero {
+    background: url('../images/flyer.jpg') center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    background: orange;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .services {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .services ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .services li {
+    margin: 10px 0;
+    font-size: 1.2em;
+  }
+  
+  .contact {
+    padding: 40px;
+    background-color: #004080;
+    color: white;
+    text-align: center;
+  }
+  .about, .testimonials {
+    padding: 40px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .about p {
+    max-width: 700px;
+    margin: auto;
+    font-size: 1.1em;
+    line-height: 1.6em;
+  }
+  
+  .testimonial-card {
+    background-color: #f0f0f0;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .testimonial-card p {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-card h4 {
+    color: #333;
+    font-weight: normal;
+  }
+/* Animation Keyframes */
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Base animation class */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.6s ease-out;
+  }
+  
+  .fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Optional hover animation for CTA button */
+  .cta-button:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+  }
+  .service-list i {
+    margin-right: 10px;
+    color: #004080;
+  }
+  
+  /* Bounce Animation */
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+  
+  .bounce {
+    display: inline-block;
+    animation: bounce 2s infinite;
+  }
+  
